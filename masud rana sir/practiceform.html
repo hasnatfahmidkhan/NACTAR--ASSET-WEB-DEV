@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>This is title	</title>
+</head>
+<body>
+
+<h1>The input value attribute</h1>
+
+<p>The value attribute specifies an initial value for an input field:</p>
+
+<form action="/">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Hasnat" readonly><br><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Fahmid" disabled><br><br>
+  
+   <label for="fullname">Full name:</label><br>
+  <input type="text" id="fullname" name="fullname" value="" autofocus><br><br>
+  <label for="datemax">Enter a date before 1980-01-01:</label><br>  
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+  <label for="datemax">Enter a date After 1979-12-31:</label><br>
+  <input type="date" id="datemin" name="datemin" min="1979-12-31"><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="password">Passwords from 1 to 9 can be used:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+  
+  <label for="quantity">Select The quantity:<label><br>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+  
+  <label for="files">Select Multiple File:</label><br>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

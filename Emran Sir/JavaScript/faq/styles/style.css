@@ -1,0 +1,38 @@
+
+.title {
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+.title span {
+    display: block;
+}
+
+.fa-icon {
+    font-size: 5rem;
+    color: #009790;
+}
+
+.mail-btn-color{
+    background: #009790;
+    color: #fff;
+    font-weight: 600;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.mail-btn-color:hover{
+    transform: scale(.95);
+    color: #fff;
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+}
+
+.project-container {
+    background: linear-gradient(rgb(9, 128, 226), rgb(0, 174, 255));
+    height: 250px;
+}

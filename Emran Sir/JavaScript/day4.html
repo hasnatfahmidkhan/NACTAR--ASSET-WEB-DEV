@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        let i = 1;
+        for (i; i <= 100; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        document.write("sum of even: ", sum);
+        document.write("<br>");
+        
+        let sum2 = 0;
+        let a=1;
+        for (a; a <= 100; a++) {
+            if (a % 2 !== 0) {
+                // document.write(i);
+                sum2 += a;
+                //  document.write("<br>");          
+            }
+        }
+        document.write("sum of odd: ", sum2);
+        document.write("<br>");
+
+        // while loop 
+
+        // let k = 1;
+        // while (k <= 100) {
+        //     if (k % 2 !== 0) {
+        //         document.write(k)
+        //         document.write("<br>")
+        //     }
+        //     k++;
+        // };
+
+        let j = 1;
+        let while_sum = 0;
+        while (j <= 100) {
+            if (j % 2 !== 0) {
+                while_sum += j;
+                // document.write(j)
+                // document.write("<br>")
+            }
+            j++;
+        }
+        document.write("while odd number: ",while_sum);
+        // document.write("sum of even: ", while_sum);
+        // document.write("<br>");
+
+        // while (j <= 100) {
+        //     if (j % 2 !== 0) {
+        //         while_sum += j;
+        //     }
+        //     j++;
+        // }
+        // document.write("sum of odd: ", while_sum);
+        // document.write("<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .form-box {
+            background-color: rgba(141, 140, 140, 0.486);
+            width: 15%;
+            padding: 3rem;
+        }
+
+        .user-name {
+            /* border: 1px solid red; */
+            margin-bottom: 1rem;
+        }
+
+        .user-pwd {
+            /* border: 1px solid red; */
+            margin-bottom: 1rem;
+        }
+
+        form .login-btn {
+            display: inline-block;
+            background: #e42020;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" class="form-box">
+        <div class="user-name">
+            <label for="id">ID:</label>
+            <span style="color: red;" id="wr-user-name"></span><br>
+            <input type="text" id="id">
+        </div>
+        <div class="user-pwd">
+            <label for="password">Password:</label>
+            <span style="color: red;" id="wr-user-pwd"></span><br>
+            <input type="password" id="password">
+        </div>
+
+        <input type="submit" value="Login" id="login-btn" onclick="calculation()">
+    </form>
+    <script>
+        // var x= 6;
+        // var result=x%2==0?"Even":"Odd";
+        // document.write(x," ", result);
+        // let p =prompt("enter your choice")
+        // document.write(p)
+        // let c = confirm("ARe you ok: ");
+        // document.write(c);
+
+        function calculation() {
+            let id = "hasnat";
+            let pwd = "134";
+            let userid = document.getElementById("id").value;
+            let userpwd = document.getElementById("password").value;
+            // alert(userpwd)
+            // alert(userid.length)
+            if (userid < 1 && userpwd < 1) {
+                document.getElementById("wr-user-name").innerHTML = "Please Enter Your UserID"
+                document.getElementById("wr-user-pwd").innerHTML = "Please Enter Your Password";
+
+            }
+            else if (userpwd < 1) {
+                document.getElementById("wr-user-pwd").innerHTML = "Please Enter Your UserID";
+            }
+            else if (userid < 1) {
+                document.getElementById("wr-user-name").innerHTML = "Please Enter Your UserID";
+
+            }
+
+            else if (userid == id && userpwd == pwd) {
+                alert("Login Successfully");
+
+            }
+
+            else if (userid != id) {
+                document.getElementById("wr-user-name").innerHTML = " You Enter Wrong userid"
+            }
+            else {
+                document.getElementById("wr-user-pwd").innerHTML = " You Enter Wrong pass"
+            }
+        }
+    </script>
+</body>
+
+</html>

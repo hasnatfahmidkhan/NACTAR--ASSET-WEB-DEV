@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background: #fff;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: rgb(61, 61, 61);
+        }
+
+        .top-images img,
+        .bottom-image img {
+            border: 2px solid purple;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+            margin: 30px 10px;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        /* .top-images img:hover,
+        .bottom-image img:hover {
+            transform: translateY(-5px);
+            box-shadow: rgba(0, 0, 0, 0.3.5) 0px 5px 15px;
+        } */
+
+        /* .bottom {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .about,
+        .bottom-image {
+            display: inline-block;
+            width: 400px;
+
+        }
+
+        .about {
+            transform: translate(-50%, -50%);
+            width: 300px;
+        }
+
+        .about h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            color: #555;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>Our Photo Gallery</h2>
+    <div class="top-images">
+        <img src="/Flex/01.jpg" alt="image not found" srcset="">
+        <img src="/Flex/01.jpg" alt="image not found" srcset="">
+        <img src="/Flex/01.jpg" alt="image not found" srcset="">
+    </div>
+
+
+    <div class="bottom">
+        <div class="about">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam temporibus repudiandae alias vitae.
+                Eligendi nesciunt eum molestias ullam iste error, laudantium fugit mollitia officiis tempore quaerat
+                asperiores iure nam sit?
+            </p>
+        </div>
+
+        <div class="bottom-image">
+            <img src="/Flex/01.jpg" alt="image not found">
+        </div>
+    </div>
+
+</body>
+
+</html>

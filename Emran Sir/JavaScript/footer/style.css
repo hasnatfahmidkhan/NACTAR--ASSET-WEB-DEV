@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+}
+
+p,
+a,
+.digital-rights {
+  color: #c7c7c7;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.footer-container {
+  background: #070707e7;
+  color: #fff;
+}
+
+.icon-color {
+  color: #ececec;
+}
+
+.links-container ul {
+  padding: 0;
+}
+.links-container ul li {
+  list-style: none;
+}
+
+.btn-color {
+  color: #fff;
+  background: #03b2ddc4;
+}
+
+.btn-color:hover {
+  color: #c7c7c7;
+  background: #04a1c9c4;
+}

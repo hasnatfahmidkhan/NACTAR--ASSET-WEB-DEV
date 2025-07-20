@@ -1,0 +1,15 @@
+/* for tablet devices  */
+
+@media screen and(max-width: 1024px) {
+
+    .card-container {
+        justify-content: center;
+    }
+}
+
+/* for mobile devices  up to 425px*/
+@media screen and(max-width: 640) {
+    .card-container {
+        justify-content: center;
+    }
+}

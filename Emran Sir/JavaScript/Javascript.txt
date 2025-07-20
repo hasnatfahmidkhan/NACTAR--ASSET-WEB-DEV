@@ -1,0 +1,44 @@
+------------- 1st Day ------------
+js ken use kori 
+web js ken use hoy
+koto vabe js add kora zay
+js ken head and body te use hoy  
+document.write is used for showing in document
+console.log is used for showing in console
+console.log is used for error handling
+
+------------- 1st Day ------------
+
+------------- 2nd Day ------------
+javascript is a case sensitive language. here small and big hand letter are not same ex: Age =8; age=4; they are different variable.
+variable can be declared in 4 way 
+1. automatically
+2. var
+3. let
+4. const
+
+let and const is a block scope or function scope 
+let can not be redeclared in function.
+and const variable can't be change or redeclared or initialize and const variable must be declared and initialize at same time
+var is a globe scope it can be redeclared
+
+--- Rules for variable name ---
+1. name can contain letters, digits, underscore, dollar sign
+2. name must be begin with a letter
+3. Names are also case sensitive
+4. reserved word or keywords can't e used as variable names
+5. difference between double equal and triple equal
+ans: double equal check the the value only and triple equal check value and datatype
+------ HOme Work ------
+what is the difference between var, let and const
+why we use comments IN css, html, javascript
+
+------------- 2nd Day ------------
+
+-------------day i don't know ------------
+what is the difference of function method 
+what is the  function call
+what is the difference of parameter and argument
+what is event 
+
+

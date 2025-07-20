@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Object</title>
+    <link rel="stylesheet" href="../animate.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div">
+      <span id="time"></span>
+      <br /><br />
+      <span id="month"></span>
+    </div>
+    <i class="fa-solid fa-truck animate__animated animate__slideInLeft" style="margin-left: 5rem; font-size: 2rem;"></i>
+
+    <script>
+      // let month = d.getMonth();
+      // let year = d.getFullYear();
+      // let date = d.toLocaleDateString();
+      function showTime() {
+        const d = new Date();
+        let time = d.toLocaleTimeString();
+        document.getElementById("time").innerHTML = time;
+        // getMonth() method always returns month as number (0-11)
+        // that's why add +1 to get correct month number
+        let month = d.getMonth() + 1;
+        document.getElementById("month").innerHTML = `Month: ${month}`;
+      }
+      showTime();
+      setInterval(showTime, 1000);
+      // document.getElementById("date").innerHTML = date;
+      // document.getElementById("month").innerHTML = month;
+      // document.getElementById("year").innerHTML = year;
+      // console.log(d);
+    </script>
+  </body>
+</html>

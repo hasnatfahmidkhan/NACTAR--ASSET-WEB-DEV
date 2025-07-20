@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form Of Bogura Polytechnic Institute</title>
+</head>
+
+<body>
+    <h1 id="title">Bogura Polytechnic Survey Form</h1>
+    <p id="description">Please fill the form to help us. </p>
+    <form action="#" id="survey-form">
+        <div id="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input required type="text" id="name" placeholder="Enter Your Name" class="form-control">
+        </div>
+        <div id="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input required type="email" id="email" placeholder="Enter Your Email" class="form-control">
+        </div>
+        <div id="form-group">
+            <label for="age" id="number-label">Age(optional)</label>
+            <input type="number" id="number" min="10" max="99" placeholder="Age" class="form-control">
+        </div>
+        <div id="form-group">
+            <p>what is your gender</p>
+            <input type="radio" id="male" name="gender" value="Male" class="input-radio">
+            <label for="male" style="display: inline-block;">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female" class="input-radio">
+            <label for="female" style="display: inline-block;">Female</label>
+
+        </div>
+        <div id="form-group">
+            <p>How many programming Language Do you know</p>
+            <input type="checkbox" id="python" name="programming-lang1" value="Python" class="input-checkbox">
+            <label for="python" style="display: inline-block;">Python</label><br>
+            <input type="checkbox" id="java" name="programming-lang2" value="Java" class="input-checkbox">
+            <label for="java" style="display: inline-block;">Java</label><br>
+            <input type="checkbox" id="javascript" name="programming-lang3" value="Javascript" class="input-checkbox">
+            <label for="javascript" style="display: inline-block;">Javascript</label><br>
+        </div>
+        <div id="form-group">
+            <label for="lang" id="lang-label">Which Programming Language is Your
+                Favorite</label>
+            <select name="lang" id="lang" form="langform" class="form-control select-pad">
+                <option value="" selected disabled>Select Your Favorite Programming Language</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="javascript">Javascript</option>
+            </select>
+        </div>
+
+        <div id="form-group">
+            <p>Tell us why your Favorite is that: </p>
+            <textarea id="comments" name="comment" rows="4" cols="50" placeholder="Enter Your Opinion Here...." class="form-control"></textarea>
+        </div>
+
+        <div id="form-group">
+            <input type="submit" id="submit" class="submit-button form-control" >
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+/* all style  */
+
+/* header  */
+.logo {
+  color: #dddddd !important;
+  text-transform: uppercase;
+}
+
+.drp-link {
+  font-size: 1.2rem;
+  color: #ffffff !important;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+  opacity: 1 !important;
+}
+.custom-hover {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.custom-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff5722; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.custom-hover:hover::after {
+  width: 100%;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Optional: smooth dropdown animation */
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
+
+.hambarger {
+  border: 2px solid #ff5722 !important;
+}
+
+.navbar-scrolled {
+  background-color: #2e2e2e80 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-sty {
+  background: #ff5722;
+  color: #ffff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 700;
+
+}
+
+.button-size {
+  width: 7rem;
+}
+
+.button-sty:hover {
+  background: none;
+  border: 2px solid #ff5722;
+  color: #ff5722;
+}
+
+/* header  */
+
+/* c-item - carousel items style  */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.c-item {
+  height: 520px;
+}
+
+.c-item h2,
+.c-item p {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* makes it round */
+  background-color: #fff !important; /* dot color */
+  opacity: 1;
+  transition: opacity 0.5s;
+  margin: 0 5px; /* spacing between dots */
+}
+
+.carousel-indicators .active {
+  background-color: #ff5722 !important; /* active dot color */
+}
+/* c-item - carousel items style  */
+
+/* about  */
+
+.about-container {
+  background: #a5a5a541;
+}
+.grid-container {
+  align-items: center;
+}
+.about-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* aspect-ratio: 16/9; */
+}
+
+
+@media (max-width: 576px) {
+  .about-content {
+    margin: 1rem 0 !important;
+  }
+}
+.about-heading {
+  font-family: "Playfair Display SC";
+  color: #ff5722;
+  font-weight: bold;
+}
+.about-text {
+  text-align: justify;
+  font-family: "Baloo 2";
+  font-weight: 600;
+}
+
+/* CArd  */
+.menu-card {
+  background-image: url("caro1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ACordion  */
+
+.accordion-button:not(.collapsed) {
+  color: #ff5722 !important;
+}
+
+/* contact  */
+
+.contact-text {
+  font-family: "Playfair Display SC";
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.contact-form label,
+input::placeholder {
+  font-size: 1.3rem;
+  font-family: "Baloo 2", sans-serif;
+  color: #ff5722;
+}
+
+.form-control:focus {
+  color: #ff5722 !important;
+  background-color: #fff;
+  border: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.5);
+}
+
+/* contact  */
+
+/* footer  */
+footer {
+  background-color: #444343;
+  transition: all 0.5s ease;
+}
+footer .social-icon:hover,
+.copy-right:hover {
+  color: #ff5722 !important;
+}

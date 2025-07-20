@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #555;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10rem;
+            position: relative;
+            color: #cecdcd;
+           
+        }
+
+        .container::before {
+            content: "Hasnat...";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: #e9b824;
+            text-transform: capitalize;
+            width: 0;
+             border-right: 3px solid #e9b824;
+            overflow: hidden;
+            animation: text 2s linear infinite;
+        }
+
+        @keyframes text {
+            0% {
+                width: 100%;
+            }
+
+            50% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* .container::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0;
+            border-right: 5px solid #c79e19;
+            color: #c79e19;
+            text-transform: capitalize;
+            height: 100%;
+            animation: cursor 2s linear infinite;
+            background-color: transparent;
+
+        }
+
+        @keyframes cursor {
+            0% {
+                right: 0%;
+            }
+
+            50% {
+                right: 100%;
+            }
+
+            100% {
+                right: 0%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Hasnat...
+    </div>
+</body>
+
+</html>

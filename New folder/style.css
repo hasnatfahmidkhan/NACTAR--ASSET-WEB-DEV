@@ -1,0 +1,10 @@
+* {
+	margin: 0px ;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.content-section {
+	padding-top: 80px;
+	background-color: lightgrey;
+	padding-bottom: 80px;
+}

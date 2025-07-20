@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Learn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- For all browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/Flex/pricetable/favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Flex/pricetable/favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="/Flex/pricetable/favicon_io/favicon.ico">
+
+  <!-- For iOS (Apple devices) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/Flex/pricetable/favicon_io/apple-touch-icon.png">
+
+  <!-- For Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/Flex/pricetable/favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/Flex/pricetable/favicon_io/android-chrome-512x512.png">
+
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .toggle-container {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .toggle-container label {
+      background: #4e54c8;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toggle-container input[type="checkbox"] {
+      appearance: none;
+      width: 40px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .toggle-container input[type="checkbox"]:checked {
+      background: #ffce00;
+    }
+
+    .toggle-container input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: white;
+      border-radius: 50%;
+      top: 1px;
+      left: 1px;
+      transition: transform 0.3s;
+    }
+
+    .toggle-container input[type="checkbox"]:checked::before {
+      transform: translateX(20px);
+    }
+
+    .pricing-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .pricing-card {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      flex: 1 1 300px;
+      max-width: 350px;
+      border-radius: 15px;
+      padding: 30px 20px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #ffce00;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .plan-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    ul.features {
+      list-style: none;
+      text-align: left;
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+
+    ul.features li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    ul.features li i {
+      color: white;
+      min-width: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: white;
+      color: #4e54c8;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffce00;
+      color: black;
+    }
+
+    footer {
+
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-card {
+        flex: 1 1 45%;
+      }
+
+      .pricing-card:nth-child(3) {
+        flex: 1 1 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .pricing-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to Easy Learn</h1>
+    <p>Learning made simple! Check out our easy, affordable plans—no hidden fees, just the right fit for your learning journey.</p>
+  </header>
+
+  <div class="toggle-container">
+    <label>
+      <span>Monthly</span>
+      <input type="checkbox" id="toggleBilling" />
+      <span>Yearly</span>
+    </label>
+  </div>
+
+  <div class="pricing-wrapper">
+    <div class="pricing-card" data-month="৳500/month" data-year="৳5000/year">
+      <div class="plan-title">Basic</div>
+      <div class="price">৳500/month</div>
+      <ul class="features">
+        <li><i class="fas fa-folder-open"></i> 5 Projects</li>
+        <li><i class="fas fa-users"></i> 5 Team Members</li>
+        <li><i class="fas fa-envelope"></i> Email Support</li>
+        <li><i class="fas fa-chart-line"></i> Basic Analytics</li>
+      </ul>
+      <a href="#" class="btn">Choose Basic</a>
+    </div>
+
+    <div class="pricing-card" data-month="৳750/month" data-year="৳7500/year">
+      <div class="badge">Most Popular</div>
+      <div class="plan-title">Pro</div>
+      <div class="price">৳750/month</div>
+      <ul class="features">
+        <li><i class="fas fa-folder-plus"></i> 20 Projects</li>
+        <li><i class="fas fa-user-friends"></i> 15 Team Members</li>
+        <li><i class="fas fa-headset"></i> Email + Chat Support</li>
+        <li><i class="fas fa-chart-pie"></i> Regular Reports</li>
+      </ul>
+      <a href="#" class="btn">Choose Pro</a>
+    </div>
+
+    <div class="pricing-card" data-month="৳1000/month" data-year="৳10000/year">
+      <div class="badge">Best Value</div>
+      <div class="plan-title">Advanced</div>
+      <div class="price">৳1000/month</div>
+      <ul class="features">
+        <li><i class="fas fa-infinity"></i> Unlimited Projects</li>
+        <li><i class="fas fa-user-shield"></i> Unlimited Members</li>
+        <li><i class="fas fa-clock"></i> 24/7 Priority Support</li>
+        <li><i class="fas fa-brain"></i> Advanced Analytics</li>
+        <li><i class="fas fa-cloud"></i> Cloud Backup</li>
+      </ul>
+      <a href="#" class="btn">Get Advanced</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Easy Learn. All rights reserved.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("toggleBilling");
+    const prices = document.querySelectorAll(".pricing-card");
+
+    toggle.addEventListener("change", () => {
+      prices.forEach(card => {
+        const newPrice = toggle.checked ? card.getAttribute("data-year") : card.getAttribute("data-month");
+        card.querySelector(".price").textContent = newPrice;
+      });
+    });
+  </script>
+</body>
+
+</html>

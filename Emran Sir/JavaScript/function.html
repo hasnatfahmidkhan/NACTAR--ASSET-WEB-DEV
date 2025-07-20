@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    Number1: <input type="text" name="n1" id="n1"><br><br>
+    Number2: <input type="text" name="n2" id="n2"><br><br>
+    <button type="button" onclick="addtwonnumber()">Add</button>
+    <button type="button" onclick="subtwonnumber()">Sub</button>
+    <button type="button" onclick="divtwonnumber()">Div</button>
+    <button type="button" onclick="clearAll()">Clear All</button>
+
+    <br>
+    <br>
+    <span id="r"></span>
+    <script>
+        let n1;
+        let n2;
+
+        function inputData() {
+            n1 = parseFloat(document.getElementById("n1").value);
+            n2 = parseFloat(document.getElementById("n2").value);
+        }
+        let result;
+        function addtwonnumber() {
+            inputData();
+            result = n1 + n2;
+            OutputData(result);
+
+        }
+        function subtwonnumber() {
+            inputData();
+            result = n1 - n2;
+            OutputData(result);
+        }
+        function divtwonnumber() {
+            inputData();
+            result = n1 / n2;
+            OutputData(result);
+        }
+
+        function OutputData() {
+            document.getElementById("r").innerHTML = "Result is: " + result;
+        }
+
+        function clearAll() {
+            document.getElementById("n1").value = "";
+            document.getElementById("n2").value = "";
+            document.getElementById("r").innerHTML = "";
+        }
+        // function addtwonnumber(x, y) {
+        // let x =2;
+        // let y=3;
+        // let z = x + y;
+        // document.write(z);
+        // return z;
+
+        // }
+        // let a = 55;
+        // let b = 55;
+        // let result = addtwonnumber(a, b);
+        // addtwonnumber(2,4)
+        // document.write(result);
+
+
+    </script>
+</body>
+
+</html>
