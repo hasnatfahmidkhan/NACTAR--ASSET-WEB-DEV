@@ -17,9 +17,9 @@
     <!-- Header Section Start  -->
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Philip Gilbert</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,16 +40,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-myself">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -82,7 +82,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-6">
-              <div class="banner-content">
+              <div class="banner-content animate__animated  animate__zoomIn">
                 <h5 class="mb-4 fw-normal openSans-font banner-subtitle">
                   This is me
                 </h5>
@@ -98,11 +98,11 @@
               </div>
             </div>
             <div class="col-md-5">
-              <div class="banner-img-container">
+              <div class="banner-img-container overflow-hidden">
                 <img
                   src="./images/hero-img.png.webp"
                   alt=""
-                  class="img-fluid"
+                  class="img-fluid animate__animated animate__slideInUp"
                 />
               </div>
             </div>
@@ -116,10 +116,10 @@
     <!-- Main Section Start  -->
     <main>
       <!-- About Section Start  -->
-      <section class="container about my-5">
-        <div class="row justify-content-center">
+      <section id="about-myself" class="container about my-5 overflow-hidden">
+        <div class="row gap-md-5">
           <!-- About Content  -->
-          <div class="col-md-6">
+          <div class="col-md-6 about-content animate__animated animate__slideInLeft">
             <h2 class="text-uppercase fs-1 fw-bold mb-4">About myself</h2>
             <p class="mb-5 about-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
@@ -128,7 +128,7 @@
               repellendus ab veritatis, magnam quod porro ex. Officia culpa
               fugiat assumenda amet veniam.
             </p>
-            <div class="row ">
+            <div class="row">
               <div class="col-12 col-md-4 service-count-card-container">
                 <div class="d-flex flex-column gap-3 p-4 detail-card">
                   <i class="fa-solid fa-database fs-4"></i>
@@ -153,7 +153,7 @@
             </div>
           </div>
           <!-- tools expertness  -->
-          <div class="col-md-6 p-4 tools-exp-bg">
+          <div class="col-md-5 p-4 tools-exp-bg animate__animated animate__slideInRight ">
             <h2 class="text-uppercase mb-4">tools expertness</h2>
             <div class="d-flex flex-column gap-4">
               <div>
@@ -254,15 +254,15 @@
       <!-- About Section End  -->
 
       <!-- Services Section Start  -->
-      <section class="container services-section">
+      <section id="services" class="container services-section">
         <div class="text-center mb-5">
           <h5 class="text-uppercase service-subtitle">What I Do</h5>
           <h2 class="text-capitalize service-title">
             awesome quality Services
           </h2>
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-4">
+        <div class="row overflow-hidden">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInLeftBig ">
             <div class="d-flex align-items-center gap-4 service-container">
               <div class="icon">
                 <i class="fa-solid fa-laptop"></i>
@@ -276,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInLeftBig">
             <div class="d-flex align-items-center gap-4 service-container">
               <div class="icon">
                 <i class="fa-solid fa-laptop-code"></i>
@@ -290,7 +290,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 animate__animated animate__fadeInRightBig">
             <div class="d-flex align-items-center gap-4 service-container">
               <div class="icon">
                 <i class="fa-brands fa-android"></i>
@@ -304,7 +304,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 animate__animated animate__fadeInRightBig">
             <div class="d-flex align-items-center gap-4 service-container">
               <div class="icon">
                 <i class="fa-brands fa-apple"></i>
@@ -321,12 +321,138 @@
         </div>
       </section>
       <!-- Services Section End  -->
+
+      <!-- Price Section Start  -->
+      <section id="pricing" class="container mb-md-5 price-card-section">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase text-color-gray price-section-subtitle">
+            pricing plan
+          </h4>
+          <h2 class="text-capitalize price-section-title">affordable price</h2>
+        </div>
+
+        <!-- price-card  -->
+        <div class="row justify-content-center gap-4">
+          <div class="col-12 col-md-3">
+            <div class="card py-4 price-card-hover">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase mb-3 fs-2">basic</h4>
+                <h2 class="fw-bold fs-1">
+                  <sup class="fw-normal fs-4">$</sup>49<sub
+                    class="fw-normal fs-4"
+                    >/mo</sub
+                  >
+                </h2>
+                <ul
+                  class="d-flex flex-column align-items-center gap-3 mt-4 ps-0"
+                >
+                  <li class="text-color-gray fs-5 ps-0">Bootstrap 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Font Awesome 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Responsive Design</li>
+                  <li class="text-color-gray fs-5 ps-0">
+                    Browser Compatibility
+                  </li>
+                  <li class="text-color-gray fs-5 ps-0">Easy To USe</li>
+                </ul>
+                <button type="button" class="btn btn-dark mt-2">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card py-4 price-card-hover">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase mb-3 fs-2 price-tag">standard</h4>
+                <h2 class="price-tag fw-bold fs-1">
+                  <sup class="fw-normal fs-4 standard-price-tag">$</sup>99<sub
+                    class="fw-normal fs-4 standard-price-tag"
+                    >/mo</sub
+                  >
+                </h2>
+                <ul
+                  class="d-flex flex-column align-items-center gap-3 mt-4 ps-0"
+                >
+                  <li class="text-color-gray fs-5 ps-0">Bootstrap 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Font Awesome 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Responsive Design</li>
+                  <li class="text-color-gray fs-5 ps-0">
+                    Browser Compatibility
+                  </li>
+                  <li class="text-color-gray fs-5 ps-0">Easy To USe</li>
+                </ul>
+                <button type="button" class="btn mt-2 standard-btn-bg">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card py-4 price-card-hover">
+              <div class="card-body text-center">
+                <h4 class="text-uppercase mb-3 fs-2">premium</h4>
+                <h2 class="fw-bold fs-1">
+                  <sup class="fw-normal fs-4">$</sup>149<sub
+                    class="fw-normal fs-4"
+                    >/mo</sub
+                  >
+                </h2>
+                <ul
+                  class="d-flex flex-column align-items-center gap-3 mt-4 ps-0"
+                >
+                  <li class="text-color-gray fs-5 ps-0">Bootstrap 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Font Awesome 5</li>
+                  <li class="text-color-gray fs-5 ps-0">Responsive Design</li>
+                  <li class="text-color-gray fs-5 ps-0">
+                    Browser Compatibility
+                  </li>
+                  <li class="text-color-gray fs-5 ps-0">Easy To USe</li>
+                </ul>
+                <button type="button" class="btn btn-dark mt-2">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Price Section End -->
+
+      <!-- Isotope  -->
+      <!-- <section class="container">
+        <div class="grid">
+          <div class="element-item transition metal">...</div>
+          <div class="element-item post-transition metal">...</div>
+          <div class="element-item alkali metal">...</div>
+          <div class="element-item transition metal">...</div>
+          <div class="element-item lanthanoid metal inner-transition">...</div>
+          <div class="element-item halogen nonmetal">...</div>
+          <div class="element-item alkaline-earth metal">...</div>
+          ...
+        </div>
+      </section> -->
     </main>
 
     <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- isotope  -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <script>
+      // filter .metal items
+      $grid.isotope({ filter: ".metal" });
+
+      // filter .alkali OR .alkaline-earth items
+      $grid.isotope({ filter: ".alkali, .alkaline-earth" });
+
+      // filter .metal AND .transition items
+      $grid.isotope({ filter: ".metal.transition" });
+
+      // show all items
+      $grid.isotope({ filter: "*" });
+    </script>
+
     <!-- js -->
     <script src="./Bootstrap 5/bootstrap.bundle.min.js"></script>
     <script>
